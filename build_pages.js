@@ -14,7 +14,7 @@ const head = (title, desc) => `<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=2">
   <link rel="icon" type="image/png" href="assets/crest.png?v=2">
 </head>
 <body>
@@ -59,6 +59,7 @@ const nav = (active) => `<nav class="main-nav">
     <div class="nav-links" id="navLinks">
       <a href="index.html"${active==='home'?' class="active"':''}>Home</a>
       <a href="news.html"${active==='news'?' class="active"':''}>News</a>
+      <a href="member-of-the-month.html"${active==='motm'?' class="active"':''}>Member of the Month</a>
       <a href="pick-schedules.html"${active==='picks'?' class="active"':''}>Pick Schedules</a>
       <a href="routes.html"${active==='routes'?' class="active"':''}>Routes</a>
       <a href="officers.html"${active==='officers'?' class="active"':''}>Officers</a>
@@ -95,6 +96,7 @@ const footer = `<footer class="footer">
         <h4>The Local</h4>
         <ul>
           <li><a href="news.html">News &amp; Advisories</a></li>
+          <li><a href="member-of-the-month.html">Member of the Month</a></li>
           <li><a href="officers.html">Officers</a></li>
           <li><a href="#">Union Meetings</a></li>
           <li><a href="#">Member Portal</a></li>
